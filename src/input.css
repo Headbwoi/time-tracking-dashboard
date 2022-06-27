@@ -6,4 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.active{
+    color: hsl(0, 0%, 100%);
+}
