@@ -8,7 +8,7 @@ module.exports = {
     screens: {
       sm: "640px",
       md: "768px",
-      lg: "1120px",
+      lg: "1115px",
     },
     colors: {
       Blue: "hsl(246, 80%, 60%)",
@@ -22,6 +22,7 @@ module.exports = {
       darkBlue: "hsl(235, 46%, 20%)",
       desaturatedBlue: "hsl(235, 45%, 61%)",
       paleBlue: "hsl(236, 100%, 87%)",
+      white: "hsl(0, 0%, 100%)",
     },
     fontFamily: {
       rubik: ["'Rubik', 'sans-serif'"],
