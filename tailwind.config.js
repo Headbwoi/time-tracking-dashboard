@@ -17,7 +17,7 @@ module.exports = {
       studyBg: "hsl(348, 100%, 68%)",
       exerciseBg: "hsl(145, 58%, 55%)",
       socialBg: "hsl(264, 64%, 52%)",
-      selfCareBg: "hsl(43, 84%, 65%)",
+      selfcareBg: "hsl(43, 84%, 65%)",
       veryDarkBlue: "hsl(226, 43%, 10%)",
       darkBlue: "hsl(235, 46%, 20%)",
       desaturatedBlue: "hsl(235, 45%, 61%)",
