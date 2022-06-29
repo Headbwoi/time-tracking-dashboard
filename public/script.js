@@ -1,7 +1,4 @@
 const btn = document.querySelectorAll(".btn")
-const dailyBtn = document.querySelector(".dailyBtn")
-const weeklyBtn = document.querySelector(".weeklyBtn")
-const monthlyBtn = document.querySelector(".monthlyBtn")
 
 
 const removeActiveClass = () => {
@@ -18,23 +15,41 @@ const getData = async () => {
 
 // Update data shown in each category according to selected period
 async function showData() {
+
+  let option
+
+  const response = await getData()
+
+  switch (option) {
+    case "daily":
+      previousTextValue = "Yesterday" 
+      break;
+    case "weekly":
+      previousTextValue = "Last Week"
+      break
+    case "monthly":
+      previousTextValue = "Last Month"
+      break
+  
+  }
+  
+  response.forEach(info => {
+    const title = info.title
+    const timeframe = info.timeframes
+
+      console.log(timeframe);
+
+  })
+
   
 }
 
-dailyBtn.addEventListener("click", () => {
+btn.forEach(btn => {
+  btn.addEventListener("click", () => {
     removeActiveClass()
-    dailyBtn.classList.add("active")
+    btn.classList.add("active")
+    // const clickedOption = btn.target.dataset.value
+    // console.log(clickedOption);
     showData()
+  })
 })
-weeklyBtn.addEventListener("click", () => {
-    removeActiveClass()
-    weeklyBtn.classList.add("active")
-    showData()
-})
-monthlyBtn.addEventListener("click", () => {
-    removeActiveClass()
-    monthlyBtn.classList.add("active")
-    showData()
-})
-
-/**- The text for the previous period's time should change based on the active timeframe. For Daily, it should read "Yesterday" e.g "Yesterday - 2hrs". For Weekly, it should read "Last Week" e.g. "Last Week - 32hrs". For monthly, it should read "Last Month" e.g. "Last Month - 19hrs". */
