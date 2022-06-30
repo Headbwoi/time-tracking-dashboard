@@ -44,7 +44,9 @@ Users should be able to:
 
 ### What I learned
 
+  I learned how to fetch and manipulate data from a local json file, it was challenging but i got a working solution.
+
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Headbwoi)
+- Twitter - [@yourusername](https://www.twitter.com/Headbwoi_1)
